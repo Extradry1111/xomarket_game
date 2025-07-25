@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XO Market – Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="main-title">XO Market</h1>
+    <h2 class="subtitle">Tic tac toe game</h2>
+  </header>
+
+  <button id="start-btn" class="start-button">Start Game</button>
+
+  <div id="mode-select" class="hidden">
+    <h3>Select Victory Condition:</h3>
+    <div class="mode-buttons">
+      <button class="mode-btn" data-wins="3">Play to 3 Wins</button>
+      <button class="mode-btn" data-wins="6">Play to 6 Wins</button>
+      <button class="mode-btn" data-wins="9">Play to 9 Wins</button>
+    </div>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <button id="back-btn" class="back-button">← Back to Menu</button>
+    <div class="scoreboard">
+        <span>Player (X): <span id="player-score">0</span></span>
+        <span>⏱️ Time: <span id="timer">0</span> sec</span>
+        <span>Bot (O): <span id="bot-score">0</span></span>
+      </div>
+      
+
+    <div id="game-board"></div>
+    <div id="status"></div>
+    <button id="restart-btn">Restart Game</button>
+
+    <div id="name-form" class="hidden">
+      <h3>Game Over! Enter your name:</h3>
+      <input type="text" id="player-name" placeholder="Your name" />
+      <button onclick="submitName()">Submit</button>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

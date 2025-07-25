@@ -1,0 +1,143 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #ffe0f0);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    margin: 2rem 0 1rem;
+  }
+  
+  .main-title {
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    color: #ff4d9b;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 0.5rem;
+  }
+  
+  .start-button {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ff6fb0, #ffc0cb);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .start-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff4d9b, #ff9ebf);
+  }
+  
+  .mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .mode-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #ffa6c9, #ff6fb0);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+  }
+  
+  .mode-btn:hover {
+    transform: scale(1.08);
+    background: linear-gradient(to right, #ff4d9b, #ff7bb7);
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+  }
+  
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell img {
+    width: 60%;
+    height: 60%;
+  }
+  
+  #status {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  #restart-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffb6c1;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #name-form {
+    margin-top: 2rem;
+  }
+  .back-button {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    color: #ff4d9b;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .back-button:hover {
+    color: #e60073;
+  }
+  
